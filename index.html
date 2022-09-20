@@ -10,12 +10,41 @@
       body {
         background-color: #eeeeee;
       }
-      section {
+      .content {
         max-width: 1200;
         padding: 10%;
       }
       header {
         padding: 0;
+      }
+      .logo {
+        display: inline;
+        padding: 0;
+      }
+      .menu {
+        display: inline-block;
+        list-style: none;
+        padding: 0;
+        text-align: right;
+        margin: 0 0 0 70%;
+        font-family: "Space Mono", monospace;
+        font-weight: 500;
+        font-size: 15px;
+      }
+      .menuItem {
+        display: inline;
+        margin: 0 20px;
+      }
+      .navigation {
+        font-family: "Space Mono", monospace;
+        color: #222831;
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+        font-weight: 600;
+      }
+      .navigation:hover {
+        color: #00adb5;
+        text-decoration: underline;
       }
       h1,
       h2 {
@@ -42,16 +71,6 @@
         padding: 2px;
       }
 
-      .navigation {
-        font-family: "Space Mono", monospace;
-        color: #222831;
-        text-decoration: none;
-        transition: all 200ms ease-in-out;
-      }
-      .navigation:hover {
-        color: #00adb5;
-        text-decoration: underline;
-      }
       .button {
         display: inline-block;
         color: white;
@@ -69,6 +88,13 @@
         color: #222831;
         cursor: pointer;
       }
+
+      .funtionButton {
+        font-family: "Montserrat", sans-serif;
+        text-align: left;
+        border: none;
+        cursor: pointer;
+      }
       footer {
         margin-top: 5%;
         padding-top: 20px;
@@ -80,33 +106,13 @@
       .footer-text {
         text-align: center;
       }
-      ul {
-        display: inline-block;
-        list-style: none;
-        padding: 0;
-        text-align: right;
-        margin: 0 0 0 70%;
-        font-family: "Space Mono", monospace;
-        font-weight: 500;
-        font-size: 15px;
-      }
-      li {
-        display: inline;
-        margin: 0 20px;
-      }
-      button {
-        font-family: "Montserrat", sans-serif;
-        text-align: left;
-        border: none;
-        cursor: pointer;
-      }
     </style>
   </head>
   <body>
     <header>
       <img class="logo" src="images/favicon.png" />
-      <ul>
-        <li>
+      <ul class="menu">
+        <li class="menuItem">
           <a
             href="https://www.linkedin.com/in/joanaparente"
             class="navigation"
@@ -114,19 +120,20 @@
             >ABOUT ME</a
           >
         </li>
-        <li>
+        <li class="menuItem">
           <a href="mailto:jrparente@gmail.com" class="navigation">CONTACTS</a>
         </li>
       </ul>
       <hr />
     </header>
-    <section>
+    <section class="content">
       <h1>Hello World 👋</h1>
       <h2>I'm Joana</h2>
       <p>
         A
         <span class="text-highlight" id="whatAmI">Digital Marketeer</span>
-        (<button onclick="myFunction()">What Else?</button>) from Portugal.
+        (<button class="funtionButton" onclick="myFunction()">What Else?</button
+        >) from Portugal.
       </p>
       <a href="mailto:jrparente@gmail.com" class="button">GET IN TOUCH</a>
     </section>
