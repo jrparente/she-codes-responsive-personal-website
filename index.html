@@ -9,6 +9,7 @@
     <style>
       body {
         background-color: #eeeeee;
+        margin: 0;
       }
       nav {
         overflow: hidden;
@@ -16,15 +17,13 @@
         padding: 20px 10px;
       }
       .logo {
-        display: inline;
-        position: absolute;
         float: left;
         max-height: 100%;
       }
       .menu {
         list-style: none;
         padding: 0;
-        text-align: center;
+        text-align: right;
         float: right;
         font-family: "Space Mono", monospace;
         font-weight: 500;
@@ -114,11 +113,16 @@
       @media screen and (max-width: 500px) {
         .menu {
           float: none;
+          text-align: center;
+          margin: 0 auto;
+        }
+        .menuItem {
           display: block;
-          text-align: left;
         }
         .logo {
           float: none;
+          display: block;
+          margin: 0 auto;
         }
       }
     </style>
