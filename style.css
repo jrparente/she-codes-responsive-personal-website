@@ -1,0 +1,123 @@
+body {
+  background-color: #eeeeee;
+  margin: 0;
+}
+nav {
+  overflow: hidden;
+  background-color: white;
+  padding: 10px 10px;
+}
+.logo {
+  float: left;
+  max-height: 100%;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  text-align: right;
+  float: right;
+  font-family: "Space Mono", monospace;
+  font-weight: 500;
+  font-size: 15px;
+}
+.menuItem {
+  display: inline;
+  margin: 0 20px;
+}
+.navigation {
+  font-family: "Space Mono", monospace;
+  color: #222831;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  font-weight: 600;
+}
+.navigation:hover {
+  color: #00adb5;
+  text-decoration: underline;
+}
+
+.content {
+  max-width: 1200;
+  padding: 10%;
+}
+
+h1,
+h2 {
+  font-family: "Space Mono", monospace;
+  text-align: left;
+  font-weight: 900;
+  line-height: 48px;
+}
+h1 {
+  color: #222831;
+  font-size: 50px;
+}
+h2 {
+  color: #00adb5;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+}
+.text-highlight {
+  background-color: #393e46;
+  color: #eeeeee;
+  text-transform: uppercase;
+  padding: 2px;
+}
+
+.button {
+  display: inline-block;
+  color: white;
+  padding: 15px 20px;
+  background-color: #222831;
+  border-radius: 4px;
+  font-size: large;
+  font-family: "Space Mono", monospace;
+  transition: all 200ms ease-in-out;
+  margin-top: 20px;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #00adb5;
+  color: white;
+  cursor: pointer;
+}
+
+.funtionButton {
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 20px;
+  height: auto;
+  width: 100vw;
+  background-color: #393e46;
+  color: #eeeeee;
+  font-size: 12px;
+}
+.footer-text {
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .menu {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .menuItem {
+    display: block;
+    margin: 20px 0 20px 0;
+  }
+  .logo {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
