@@ -40,7 +40,7 @@ nav {
 .content {
   max-width: 1200;
   padding: 10%;
-  display: block;
+  display: flex;
 }
 
 .image {
@@ -66,6 +66,8 @@ h2 {
 p {
   font-family: "Montserrat", sans-serif;
   text-align: left;
+  font-size: 20px;
+  line-height: 30px;
 }
 .text-highlight {
   background-color: #393e46;
@@ -113,6 +115,7 @@ footer {
 }
 .footer-text {
   text-align: center;
+  font-size: 12px;
 }
 @media screen and (max-width: 500px) {
   .menu {
@@ -128,5 +131,15 @@ footer {
     float: none;
     display: block;
     margin: 0 auto;
+  }
+  h1,
+  h2,
+  p {
+    text-align: center;
+  }
+  a.button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
   }
 }
