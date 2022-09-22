@@ -40,8 +40,7 @@ nav {
 .content {
   max-width: 1200;
   padding: 10%;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: block;
 }
 
 .image {
