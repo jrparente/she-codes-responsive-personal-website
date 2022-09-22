@@ -4,7 +4,7 @@ body {
 }
 nav {
   overflow: hidden;
-  background-color: white;
+  background-color: #f4f4f4;
   padding: 10px 10px;
 }
 .logo {
@@ -24,6 +24,7 @@ nav {
   display: inline;
   margin: 0 20px;
 }
+
 .navigation {
   font-family: "Space Mono", monospace;
   color: #222831;
@@ -39,6 +40,14 @@ nav {
 .content {
   max-width: 1200;
   padding: 10%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.image {
+  float: right;
+  max-width: 50%;
+  height: auto;
 }
 
 h1,
@@ -91,6 +100,7 @@ p {
   cursor: pointer;
 }
 footer {
+  display: block;
   position: absolute;
   bottom: 0;
   left: 0;
