@@ -2,60 +2,88 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ecommerce & Performance Marketing - Joana Parente</title>
-  <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <!-- My CSS -->
   <link rel="stylesheet" href="src/style.css" />
+  <!-- My Javascript -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/42ad39df4b.js" crossorigin="anonymous"></script>
+  <!-- SEO and meta description -->
+  <title>Ecommerce & Performance Marketing - Joana Parente</title>
+
+
 </head>
 
 <body>
 
-  <nav>
+  <header class="sticky-top">
+    <nav>
+      <div class="container pt-3 pb-3">
+        <div class="row">
+          <div class="col">
+            <img class="logo" src="images/Logo.png" width="40px" />
+          </div>
+          <div class="col">
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a href="https://www.linkedin.com/in/joanaparente" class="nav-link menu-icon" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="mailto:jrparente@gmail.com" class="nav-link menu-icon"><i class="fa-solid fa-envelope"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <img class="logo" src="images/Logo.png" width="40px" />
-
-    <ul class="menu">
-      <li class="menuItem">
-        <a href="https://www.linkedin.com/in/joanaparente" class="navigation" target="_blank">ABOUT ME</a>
-      </li>
-      <li class="menuItem">
-        <a href="mailto:jrparente@gmail.com" class="navigation">CONTACTS</a>
-      </li>
-    </ul>
-
-
-  </nav>
-
-  <section class="content">
-
-    <div class="column1">
-      <h1>Hey There 👋</h1>
-      <h2>I'm Joana</h2>
-      <p>
-        A
-        <span class="text-highlight" id="whatAmI">Digital Marketeer</span>
-        (<button class="funtionButton" onclick="myFunction()">
-          What Else? Click Me</button>) from Portugal.
-      </p>
-      <a href="mailto:jrparente@gmail.com" class="button">GET IN TOUCH</a>
+  <main>
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-sm-6 p-5 align-middle">
+          <h1>Hey There 👋</h1>
+          <h2 class="mt-3">I'm Joana</h2>
+          <p class="mt-5">
+            A
+            <span class="text-highlight" id="whatAmI">Digital Marketeer</span>
+            <button class="funtionButton" onclick="myFunction()">
+              (What Else? Click Me)</button> from Portugal.
+          </p>
+          <a href="mailto:jrparente@gmail.com" class="contactme-button mt-5">GET IN TOUCH</a>
+        </div>
+        <div class="col-sm-6 p-5">
+          <img class="image" src="images/woman-coding.svg" />
+        </div>
+      </div>
     </div>
-
-    <div class="column2" hidden>
-      <img class="image" src="images/woman-coding.svg" />
-    </div>
-
-  </section>
+  </main>
 
   <footer>
+
     <p class="footer-text">
       Coded by me © 2022 Joana Parente. All Rights Reserved.
     </p>
-  </footer>
-  <script src="src/app.js">
 
-  </script>
+  </footer>
+
+  <script src="src/app.js"></script>
 </body>
 
 </html>

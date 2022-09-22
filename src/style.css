@@ -2,59 +2,18 @@ body {
   background-color: #eeeeee;
   margin: 0;
 }
-nav {
+
+header {
   overflow: hidden;
   background-color: #f4f4f4;
-  padding: 10px 10px;
-}
-.logo {
-  float: left;
-  max-height: 100%;
-}
-.menu {
-  list-style: none;
-  padding: 0;
-  text-align: right;
-  float: right;
-  font-family: "Space Mono", monospace;
-  font-weight: 500;
-  font-size: 15px;
-}
-.menuItem {
-  display: inline;
-  margin: 0 20px;
 }
 
-.navigation {
-  font-family: "Space Mono", monospace;
+header .menu-icon {
   color: #222831;
-  text-decoration: none;
-  transition: all 200ms ease-in-out;
-  font-weight: 600;
 }
-.navigation:hover {
-  color: #00adb5;
-  text-decoration: underline;
-}
-
-.content {
-  max-width: 1200;
-  padding: 10%;
-  display: flex;
-}
-
-.image {
-  float: right;
-  max-width: 50%;
-  height: auto;
-}
-
 h1,
 h2 {
-  font-family: "Space Mono", monospace;
-  text-align: left;
-  font-weight: 900;
-  line-height: 48px;
+  font-family: "Montserrat", sans-serif;
 }
 h1 {
   color: #222831;
@@ -63,20 +22,20 @@ h1 {
 h2 {
   color: #00adb5;
 }
-p {
-  font-family: "Montserrat", sans-serif;
-  text-align: left;
+p,
+a {
+  font-family: "Space Mono", monospace;
   font-size: 20px;
-  line-height: 30px;
 }
-.text-highlight {
+
+main .text-highlight {
   background-color: #393e46;
   color: #eeeeee;
   text-transform: uppercase;
   padding: 2px;
 }
 
-.button {
+main .contactme-button {
   display: inline-block;
   color: white;
   padding: 15px 20px;
@@ -88,58 +47,60 @@ p {
   margin-top: 20px;
   text-decoration: none;
 }
-.button:hover {
+main .contactme-button:hover {
   background-color: #00adb5;
   color: white;
   cursor: pointer;
 }
 
-.funtionButton {
-  font-family: "Montserrat", sans-serif;
+main .funtionButton {
+  font-family: "Space Mono", monospace;
   text-align: left;
   border: none;
   cursor: pointer;
+  font-size: 12px;
+  background: transparent;
+  padding: 0;
 }
+
+main .image {
+  float: right;
+  max-width: 50%;
+  height: auto;
+}
+
 footer {
   display: block;
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
+  overflow: hidden;
   padding-top: 20px;
   height: auto;
-  width: 100vw;
+  width: 100%;
   background-color: #393e46;
   color: #eeeeee;
   font-size: 12px;
 }
+
 .footer-text {
   text-align: center;
   font-size: 12px;
 }
-@media screen and (max-width: 500px) {
-  .menu {
-    float: none;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .menuItem {
-    display: block;
-    margin: 20px 0 20px 0;
-  }
-  .logo {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
+
+@media screen and (max-width: 600px) {
   h1,
   h2,
   p {
     text-align: center;
   }
-  a.button {
+  main .contactme-button {
     display: block;
     margin: 0 auto;
     text-align: center;
+  }
+  main .image {
+    float: none;
+    display: block;
+    margin: 0 auto;
   }
 }
