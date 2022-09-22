@@ -102,8 +102,6 @@ footer {
     text-align: center;
   }
   main .image {
-    float: none;
-    display: block;
-    margin: 0 auto;
+    display: none;
   }
 }
