@@ -10,6 +10,10 @@ header {
 
 header .menu-icon {
   color: #222831;
+  transition: all 200ms ease-in-out;
+}
+header .menu-icon:hover {
+  color: #00adb5;
 }
 h1,
 h2 {
@@ -70,7 +74,6 @@ main .image {
 }
 
 footer {
-  display: block;
   position: fixed;
   bottom: 0;
   overflow: hidden;
@@ -87,8 +90,8 @@ footer {
   font-size: 12px;
 }
 
-@media screen and (max-width: 600px) {
-  h1,
+@media screen and (max-width: 300px) {
+  main h1,
   h2,
   p {
     text-align: center;
