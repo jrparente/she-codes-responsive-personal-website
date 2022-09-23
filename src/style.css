@@ -1,10 +1,10 @@
 body {
   background-color: #eeeeee;
   margin: 0;
+  margin: auto;
 }
 
 header {
-  overflow: hidden;
   background-color: #f4f4f4;
 }
 
@@ -74,12 +74,12 @@ main .image {
 }
 
 footer {
-  position: fixed;
+  position: relative;
+  left: 0;
   bottom: 0;
-  overflow: hidden;
-  padding-top: 20px;
-  height: auto;
+  z-index: -100;
   width: 100%;
+  padding-top: 20px;
   background-color: #393e46;
   color: #eeeeee;
   font-size: 12px;
@@ -102,6 +102,8 @@ footer {
     text-align: center;
   }
   main .image {
-    display: none;
+    float: none;
+    display: block;
+    margin: 0 auto;
   }
 }
