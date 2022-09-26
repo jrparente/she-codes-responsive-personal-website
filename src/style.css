@@ -69,8 +69,7 @@ main .funtionButton {
 }
 
 main .image {
-  float: right;
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
 }
 
