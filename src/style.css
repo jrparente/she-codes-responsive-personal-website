@@ -8,13 +8,14 @@ header {
   background-color: #f4f4f4;
 }
 
-header .menu-icon {
+nav .menu-icon {
   color: #222831;
   transition: all 200ms ease-in-out;
 }
-header .menu-icon:hover {
+nav .menu-icon:hover {
   color: #00adb5;
 }
+
 h1,
 h2 {
   font-family: "Montserrat", sans-serif;
