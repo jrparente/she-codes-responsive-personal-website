@@ -1,65 +1,95 @@
+:root {
+  --primary-color: #222831;
+  --secondary-color: #393e46;
+  --accent-color: #00adb5;
+  --light-color: #eeeeee;
+  --lightest-color: #f4f4f4;
+  --title-font: "Montserrat", sans-serif;
+  --subtitle-font: "Montserrat", sans-serif;
+  --main-font: "Space Mono", monospace;
+}
+
 body {
-  background-color: #eeeeee;
+  background-color: var(--light-color);
   margin: 0;
   margin: auto;
 }
 
-header {
-  background-color: #f4f4f4;
-}
-
-nav .menu-icon {
-  color: #222831;
-  transition: all 200ms ease-in-out;
-}
-nav .menu-icon:hover {
-  color: #00adb5;
-}
-
 h1,
 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--title-font);
 }
 h1 {
-  color: #222831;
+  color: var(--primary-color);
   font-size: 50px;
 }
 h2 {
-  color: #00adb5;
+  color: var(--accent-color);
 }
 p,
 a {
-  font-family: "Space Mono", monospace;
+  font-family: var(--main-font);
   font-size: 20px;
 }
 
+header {
+  background-color: var(--lightest-color);
+}
+
+nav .menu-icon {
+  color: var(--primary-color);
+  transition: all 200ms ease-in-out;
+}
+nav .menu-icon:hover {
+  color: var(--accent-color);
+}
+
 main .text-highlight {
-  background-color: #393e46;
-  color: #eeeeee;
+  background-color: var(--secondary-color);
+  color: var(--light-color);
   text-transform: uppercase;
   padding: 2px;
 }
 
-main .contactme-button {
+main .primary-button {
   display: inline-block;
   color: white;
   padding: 15px 20px;
-  background-color: #222831;
+  background-color: var(--primary-color);
   border-radius: 4px;
   font-size: large;
-  font-family: "Space Mono", monospace;
+  font-family: var(--main-font);
   transition: all 200ms ease-in-out;
   margin-top: 20px;
   text-decoration: none;
 }
-main .contactme-button:hover {
-  background-color: #00adb5;
+main .primary-button:hover {
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
+}
+
+main .secondary-button {
+  display: inline-block;
+  color: var(--primary-color);
+  padding: 15px 20px;
+  background-color: var(--light-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  font-size: large;
+  font-family: var(--main-font);
+  transition: all 200ms ease-in-out;
+  margin-top: 20px;
+  text-decoration: none;
+}
+main .secondary-button:hover {
+  background-color: var(--accent-color);
   color: white;
   cursor: pointer;
 }
 
 main .funtionButton {
-  font-family: "Space Mono", monospace;
+  font-family: var(--main-font);
   text-align: left;
   border: none;
   cursor: pointer;
@@ -68,9 +98,10 @@ main .funtionButton {
   padding: 0;
 }
 
-main .image {
-  max-width: 100%;
-  height: auto;
+main .content {
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 footer {
@@ -80,8 +111,8 @@ footer {
   z-index: -100;
   width: 100%;
   padding-top: 20px;
-  background-color: #393e46;
-  color: #eeeeee;
+  background-color: var(--secondary-color);
+  color: var(--light-color);
   font-size: 12px;
 }
 
@@ -90,20 +121,16 @@ footer {
   font-size: 12px;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 600px) {
   main h1,
   h2,
   p {
     text-align: center;
   }
-  main .contactme-button {
+  main .primary-button,
+  main .secondary-button {
     display: block;
     margin: 0 auto;
     text-align: center;
-  }
-  main .image {
-    float: none;
-    display: block;
-    margin: 0 auto;
   }
 }

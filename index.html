@@ -4,14 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap JS -->
-  <!-- CSS only -->
+  <meta name="viewport" content="Ecommerce & Performance Marketing - Joana Parente">
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
   <!-- My CSS -->
   <link rel="stylesheet" href="src/style.css" />
   <!-- Google Fonts -->
@@ -22,11 +18,14 @@
     rel="stylesheet">
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/42ad39df4b.js" crossorigin="anonymous"></script>
-  <!-- SEO and meta description -->
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <!-- Title and Favicon -->
   <title>Ecommerce & Performance Marketing - Joana Parente</title>
   <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-
-
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -34,8 +33,7 @@
   <header class="sticky-top">
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="https://www.joanaramosparente.pt/"><img class="logo" src="images/Logo.png"
-            width="40px" /></a>
+        <a class="navbar-brand" href="/"><img class="logo" src="images/Logo.png" width="40px" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
           aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -44,19 +42,23 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="https://www.joanaramosparente.pt/">Home</a>
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="/about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Projects</a>
+              <a class="nav-link" href="/projects.html">Projects</a>
             </li>
           </ul>
           <ul class="nav">
             <li class="nav-item">
               <a href="https://www.linkedin.com/in/joanaparente" class="nav-link menu-icon" target="_blank"><i
                   class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="https://github.com/jrparente" class="nav-link menu-icon" target="_blank"><i
+                  class="fa-brands fa-github"></i></a>
             </li>
             <li class="nav-item">
               <a href="mailto:jrparente@gmail.com" class="nav-link menu-icon"><i class="fa-solid fa-envelope"></i></a>
@@ -67,11 +69,13 @@
     </nav>
   </header>
 
-  <div class="container">
-    <main class="flex-shrink-0">
-      <div class="container-fluid pt-5">
+
+  <main>
+
+    <div class="container pt-5">
+      <div class="hero">
         <div class="row">
-          <div class="col-sm-6 p-5 align-middle">
+          <div class="col-md-6 p-5 align-middle">
             <h1>Hey There 👋</h1>
             <h2 class="mt-3">I'm Joana</h2>
             <p class="mt-5">
@@ -80,15 +84,41 @@
               <button class="funtionButton" onclick="myFunction()">
                 (What Else? Click Me)</button> from Portugal.
             </p>
-            <a href="mailto:jrparente@gmail.com" class="contactme-button mt-5">GET IN TOUCH</a>
+            <a href="mailto:jrparente@gmail.com" class="primary-button mt-5">GET IN TOUCH</a>
           </div>
-          <div class="col-sm-6 p-5">
-            <img class="image" src="images/woman-coding.svg" />
+          <div class="col-md-6 p-5">
+            <img class="img-fluid d-none d-md-block" src="images/woman-coding.svg" />
           </div>
         </div>
       </div>
-    </main>
-  </div>
+    </div>
+
+    <div class="content container-fluid">
+      <div class="container">
+        <h2 class="">Most recent projects</h2>
+        <div class="row pt-5">
+          <div class="col-md-4">
+            <a href="/">
+              <img src="/images/mockup-personal-website.jpg" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://weather.joanaramosparente.pt/" target="_blank">
+              <img src="/images/mockup-weather-app.jpg" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://thegreenbeautyconcept.pt/" target="_blank">
+              <img src="/images/mockup-tgbc.jpg" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <a href="/projects.html" class="secondary-button mt-5">CHECK OUT MORE PROJECTS</a>
+      </div>
+    </div>
+
+  </main>
+
 
   <footer class="footer mt-auto py-3">
     <p class="footer-text">
@@ -96,9 +126,9 @@
     </p>
   </footer>
 
+
   <script src="src/app.js"></script>
-  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
