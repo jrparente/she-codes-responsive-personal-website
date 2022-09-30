@@ -152,6 +152,37 @@ footer {
   color: var(--primary-color);
 }
 
+.hero-header h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 20px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  font-family: var(--main-font);
+}
+
+.hero-header h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: var(--primary-color);
+  margin: 4px 10px;
+}
+
+.hero-header p {
+  margin: 0;
+  margin: -15px 0 15px 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: var(--subtitle-font);
+  color: var(--primary-color);
+}
+
 @media screen and (max-width: 600px) {
   .hero h1,
   .hero h2,
