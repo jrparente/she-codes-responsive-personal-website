@@ -196,18 +196,19 @@ main .hero {
 }
 
 footer {
-  position: relative;
-  left: 0;
-  bottom: 0;
-  z-index: -100;
-  width: 100%;
   padding-top: 20px;
   background-color: var(--secondary-color);
+}
+
+footer .footer-text {
   color: var(--light-color);
   font-size: 12px;
 }
 
-.footer-text {
-  text-align: center;
-  font-size: 12px;
+.footer-icon {
+  color: white;
+  transition: all 200ms ease-in-out;
+}
+.footer-icon:hover {
+  color: var(--accent-color);
 }
