@@ -29,7 +29,8 @@ h2 {
   color: var(--accent-color);
 }
 p,
-a {
+a,
+li {
   font-family: var(--main-font);
   font-size: 20px;
 }
