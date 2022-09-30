@@ -15,19 +15,19 @@ body {
   margin: auto;
 }
 
-h1,
-h2 {
-  font-family: var(--title-font);
-}
 h1 {
+  font-family: var(--title-font);
   color: var(--primary-color);
   font-size: 45px;
   text-transform: uppercase;
   font-weight: 700;
 }
+
 h2 {
+  font-family: var(--subtitle-font);
   color: var(--accent-color);
 }
+
 p,
 a,
 li {
@@ -37,6 +37,10 @@ li {
 
 header {
   background-color: var(--lightest-color);
+}
+
+nav .logo {
+  max-height: 40px;
 }
 
 nav .menu-icon {
@@ -60,6 +64,7 @@ main .hero {
 
 .hero .funtionButton {
   font-family: var(--main-font);
+  color: var(--accent-color);
   text-align: left;
   border: none;
   cursor: pointer;
