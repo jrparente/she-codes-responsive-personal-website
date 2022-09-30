@@ -109,6 +109,7 @@ main .hero {
   transition: all 200ms ease-in-out;
   margin-top: 20px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .primary-button:hover {
   background-color: var(--accent-color);
@@ -128,6 +129,7 @@ main .hero {
   transition: all 200ms ease-in-out;
   margin-top: 20px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .secondary-button:hover {
   background-color: var(--primary-color);
@@ -137,6 +139,12 @@ main .hero {
 
 .content {
   background-color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.content-light {
+  background-color: var(--lightest-color);
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -170,6 +178,15 @@ main .hero {
   text-transform: uppercase;
   font-family: var(--subtitle-font);
   color: var(--primary-color);
+}
+
+.social-icon {
+  color: var(--primary-color);
+  font-size: 30px;
+  transition: all 200ms ease-in-out;
+}
+.social-icon:hover {
+  color: var(--accent-color);
 }
 
 footer {
