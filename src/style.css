@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: var(--light-color);
+  background-color: white;
   margin: 0;
   margin: auto;
 }
@@ -21,7 +21,9 @@ h2 {
 }
 h1 {
   color: var(--primary-color);
-  font-size: 50px;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 h2 {
   color: var(--accent-color);
@@ -44,11 +46,56 @@ nav .menu-icon:hover {
   color: var(--accent-color);
 }
 
-main .text-highlight {
+main .hero {
+  background-color: var(--light-color);
+}
+
+.hero .text-highlight {
   background-color: var(--secondary-color);
   color: var(--light-color);
   text-transform: uppercase;
-  padding: 2px;
+  padding: 3px;
+}
+
+.hero .funtionButton {
+  font-family: var(--main-font);
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  background: transparent;
+  padding: 0;
+}
+
+.hero-header h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 20px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  font-family: var(--main-font);
+}
+
+.hero-header h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: var(--primary-color);
+  margin: 4px 10px;
+}
+
+.hero-header p {
+  margin: 0;
+  margin: -15px 0 15px 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: var(--subtitle-font);
+  color: var(--primary-color);
 }
 
 .primary-button {
@@ -88,37 +135,10 @@ main .text-highlight {
   cursor: pointer;
 }
 
-main .funtionButton {
-  font-family: var(--main-font);
-  text-align: left;
-  border: none;
-  cursor: pointer;
-  font-size: 12px;
-  background: transparent;
-  padding: 0;
-}
-
-main .content {
+.content {
   background-color: white;
   padding-top: 40px;
   padding-bottom: 40px;
-}
-
-footer {
-  position: relative;
-  left: 0;
-  bottom: 0;
-  z-index: -100;
-  width: 100%;
-  padding-top: 20px;
-  background-color: var(--secondary-color);
-  color: var(--light-color);
-  font-size: 12px;
-}
-
-.footer-text {
-  text-align: center;
-  font-size: 12px;
 }
 
 .section-header h2 {
@@ -152,48 +172,19 @@ footer {
   color: var(--primary-color);
 }
 
-.hero-header h2 {
-  font-size: 14px;
-  font-weight: 500;
-  padding: 0;
-  line-height: 1px;
-  margin: 0 0 20px 0;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--accent-color);
-  font-family: var(--main-font);
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  z-index: -100;
+  width: 100%;
+  padding-top: 20px;
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  font-size: 12px;
 }
 
-.hero-header h2::after {
-  content: "";
-  width: 120px;
-  height: 1px;
-  display: inline-block;
-  background: var(--primary-color);
-  margin: 4px 10px;
-}
-
-.hero-header p {
-  margin: 0;
-  margin: -15px 0 15px 0;
-  font-size: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: var(--subtitle-font);
-  color: var(--primary-color);
-}
-
-@media screen and (max-width: 600px) {
-  .hero h1,
-  .hero h2,
-  .hero p,
-  .content h2 {
-    text-align: center;
-  }
-  main .primary-button,
-  main .secondary-button {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
+.footer-text {
+  text-align: center;
+  font-size: 12px;
 }
