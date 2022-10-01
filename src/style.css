@@ -36,7 +36,7 @@ li {
 }
 
 header {
-  background-color: var(--lightest-color);
+  background-color: var(--light-color);
 }
 
 nav .logo {
