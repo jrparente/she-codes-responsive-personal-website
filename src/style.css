@@ -209,6 +209,7 @@ footer .footer-text,
 footer a {
   color: var(--light-color);
   font-size: 12px;
+  text-align: center;
 }
 
 footer a:hover {
