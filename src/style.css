@@ -195,14 +195,24 @@ main .hero {
   color: var(--accent-color);
 }
 
+ul.skills {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 footer {
   padding-top: 20px;
   background-color: var(--secondary-color);
 }
 
-footer .footer-text {
+footer .footer-text,
+footer a {
   color: var(--light-color);
   font-size: 12px;
+}
+
+footer a:hover {
+  color: var(--accent-color);
 }
 
 .footer-icon {
